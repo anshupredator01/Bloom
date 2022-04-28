@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".yoga">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/sukhasana"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="40dp"
+        app:cardCornerRadius="49dp"
+        android:backgroundTint="@color/lightgray"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/sukhinyoga"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/med"
+            android:layout_gravity="center"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Sukhasana"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="bottom|center_horizontal"
+            />
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cl"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="40dp"
+        android:layout_marginTop="220dp"
+        app:cardCornerRadius="49dp"
+        android:backgroundTint="@color/purple_200"
+        >
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/medlotteinmain"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/yg"
+            android:layout_gravity="center"
+            tools:ignore="MissingConstraints" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Calisthenics"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:gravity="bottom|center_horizontal"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
